@@ -1,0 +1,482 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ViewBar.ico"
+IDI_ICON_GOOGLE         ICON                    "res\\google.ico"
+IDI_ICON_ARROW          ICON                    "res\\arrow.ico"
+IDI_ICON_BAIDU          ICON                    "res\\baidu.ico"
+IDI_ICON_EBAY           ICON                    "res\\ebay.ico"
+IDI_ICON_LIVE           ICON                    "res\\live.ico"
+IDI_ICON_YAHOO          ICON                    "res\\yahoo.ico"
+IDI_ICON_LOGO           ICON                    "res\\logo.ico"
+IDI_ICON_DISPLAY        ICON                    "res\\Display.ico"
+IDI_ICON_GENERAL        ICON                    "res\\General.ico"
+IDI_ICON_NETWORK        ICON                    "res\\network.ico"
+IDI_ICON_DICT           ICON                    "res\\dict.ico"
+IDI_ICON_WIKI           ICON                    "res\\wikipedia.ico"
+IDI_ICON_DEFAULT        ICON                    "res\\default.ico"
+IDI_ICON_REDIFF         ICON                    "res\\rediff.ico"
+IDI_ICON_ASK            ICON                    "res\\ask.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Viewbar"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Viewbar Version",IDC_STATIC,40,10,61,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "V",IDC_STATIC_VERSION,101,10,71,8
+END
+
+IDD_DLG_LOGIN DIALOGEX 0, 0, 156, 276
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Viewbar"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Account:",IDC_STATIC_ID,20,54,74,8
+    LTEXT           "Password:",IDC_STATIC_PASSWD,20,83,80,8
+    LTEXT           "Not a member?",IDC_STATIC_NOTAMEMBER,21,177,95,8
+    LTEXT           "Sign up",IDC_STATIC_SIGNUP,21,185,47,8
+    EDITTEXT        IDC_EDIT_ID,31,65,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWD,31,96,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_REMEMBER_ME,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,127,114,9,8
+    CONTROL         "",IDC_CHECK_REMEMBER_ALL,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,127,128,9,8
+    DEFPUSHBUTTON   "Sign in",IDC_BTN_SIGNIN,98,164,36,14
+    RTEXT           "Remember me",IDC_STATIC_REMEMBER_ME,22,114,99,8
+    RTEXT           "Remember me and password",IDC_STATIC_REMEMBER_ALL,28,128,93,8
+END
+
+IDD_MYAPPBAR DIALOGEX 0, 0, 450, 98
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Right",IDC_STATIC_SEARCHBOX_RIGHT,249,38,18,8
+    LTEXT           "M",IDC_STATIC_ENGINE_LOGO,177,38,8,8,SS_NOTIFY
+    PUSHBUTTON      "",IDC_BTN_MINMIZE,355,36,10,14
+    LTEXT           "Logo",IDC_STATIC_LOGO,9,46,30,8
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,45,43,61,11
+    PUSHBUTTON      "",IDC_BTN_TOOLS,319,36,12,14
+    PUSHBUTTON      "",IDC_BTN_SEARCH,305,36,9,14
+    LTEXT           "Left",IDC_STATIC_S_LEFT,149,39,13,8,SS_NOTIFY
+    LTEXT           "This is top area",IDC_STATIC_S_TOP,175,12,84,8
+    LTEXT           "This is bottom area",IDC_STATIC_S_BOTTOM,177,63,60,8
+    LTEXT           "<",IDC_STATIC_ARROW,188,38,8,8,SS_NOTIFY
+    EDITTEXT        IDC_EDIT_SEARCHBOX,197,25,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+END
+
+IDD_PPG_GENERAL DIALOGEX 0, 0, 210, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Automatically run Viewbar when I log on to Windows",IDC_AUTOSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,20,187,10
+    COMBOBOX        IDC_COMBO_SEARCH,13,64,104,58,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Search Engine:",IDC_PPG_GENERAL_DEFAULT_SEARCH_ENGINE,13,49,104,8
+    GROUPBOX        "Search Engine Settings",IDC_PPG_GENERAL_SEARCH_ENGINE_SETTING,7,38,196,48
+    CONTROL         "Download and install automatically",IDC_RADIO_UPDATE_AUTO,
+                    "Button",BS_AUTORADIOBUTTON,12,101,170,10
+    CONTROL         "All manual",IDC_RADIO_UDPATE_MANNUALLY,"Button",BS_AUTORADIOBUTTON,12,125,92,10
+    CONTROL         "Auto download, but manual install",IDC_RADIO_UPDATE_SEMIAUTO,
+                    "Button",BS_AUTORADIOBUTTON,12,113,166,10
+    GROUPBOX        "Auto Update Settings",IDC_PPG_GENERAL_UPDATE_SETTING,7,90,196,52
+    PUSHBUTTON      "Check For Updates",IDC_BTN_CHECKUPDATES,117,124,72,12
+END
+
+IDD_PPG_DISPLAY DIALOGEX 0, 0, 186, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CMB_LANG,56,17,77,67,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language",IDC_STATIC_LANG,14,20,40,8
+    LTEXT           "Skins",IDC_STATIC_SKIN,14,39,40,8
+    COMBOBOX        IDC_CMB_SKIN,56,37,77,52,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Dock",IDC_STATIC_DOCK,14,57,40,8
+    COMBOBOX        IDC_CMB_DOCK,56,54,77,38,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Internet Explorer",IDC_CHECK_IE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,95,71,10
+    CONTROL         "FireFox",IDC_CHECK_FIREFOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,95,40,10
+    GROUPBOX        "Favorites Settings",IDC_STATIC_FAV,14,83,146,33
+    CONTROL         "Warning when quit Viewbar",IDC_CHK_WARNING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,129,103,10
+END
+
+IDD_PPG_NETWORK DIALOGEX 0, 0, 185, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PROXY_PORT,61,22,40,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,61,7,100,13
+    LTEXT           "Proxy IP:",IDC_STATIC_PROXY_IP,13,8,44,8
+    LTEXT           "Proxy Port:",IDC_STATIC_PROXY_PORT,13,24,44,8
+    LTEXT           "Username:",IDC_STATIC_PROXY_USER,13,40,44,8
+    LTEXT           "Password:",IDC_STATIC_PROXY_PASSWD,13,56,44,8
+    EDITTEXT        IDC_EDIT_PROXY_USER,61,38,79,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROXY_PASSWD,61,55,79,13,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Enable Proxy",IDC_CHECK_PROXY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,74,80,10
+END
+
+IDD_DLG_MSG DIALOGEX 0, 0, 197, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,46,50,14
+    LTEXT           "Static",IDC_STATIC_MSG,42,9,133,23
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,14,41,168,1
+    ICON            "",IDC_STATIC_MSG_ICON,10,10,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_MYAPPBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 443
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_PPG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PPG_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_PPG_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DLG_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "&Hide Viewbar",               ID_POPUP_HIDEVIEWBAR
+        MENUITEM "&Show Viewbar",               ID_POPUP_SHOWVB
+        MENUITEM "Si&gn in",                    ID_POPUP_SIGNIN
+        MENUITEM "Sign ou&t",                   ID_POPUP_SIGNOUT
+        MENUITEM "Show Main Window",            ID_POPUP_SHOWMAINWINDOW
+        MENUITEM "&Options...",                 ID_BAR_OPTIONS
+        MENUITEM "&About...",                   ID_POPUP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Quit",                       ID_POPUP_QUIT
+    END
+END
+
+IDR_MENU_BAR MENU 
+BEGIN
+    POPUP "BAR_MENU"
+    BEGIN
+        POPUP "&Dock"
+        BEGIN
+            MENUITEM "Top",                         ID_DOCK_TOP
+            MENUITEM "Bottom",                      ID_DOCK_BOTTOM
+        END
+        MENUITEM "&My Account...",              ID_BAR_MY_ACCOUNT
+        MENUITEM "AGLOCO &Website...",          ID_BAR_AGLOCOWEBSITE
+        MENUITEM "Options...",                  ID_BAR_OPTIONS
+    END
+END
+
+IDR_MENU_MISC MENU 
+BEGIN
+    POPUP "Misc"
+    BEGIN
+        MENUITEM "Favorites",                   ID_MISC_FAVORITES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MYAPPBAR DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x0982, 0x0000, 0x01dc, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x000a, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Viewbar..."
+    IDS_MENU_LANGUAGE       "Language"
+    IDS_MENU_SKIN           "Skin"
+    IDS_MENU_TOOLS          "Tools"
+    IDS_PPG_PREFERENCES     "Preferences"
+    IDS_PPG_DISPLAY_TOP     "Top"
+    IDS_PPG_DISPLAY_BOTTOM  "Bottom"
+    IDS_MENU_FAVORITES      "Favorites"
+    IDS_MENU_FAVORITES_IE   "Internet Explorer"
+    IDS_MENU_FAVORITES_FIREFOX "FireFox"
+    IDS_VIEWBAR_VERSION     "win32.1.05"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_CALCULATOR     "Calculator"
+    IDS_MENU_CALENDAR       "Calendar"
+    IDS_WARNING_MULTILOGIN  "You have signed in to Viewbar on another computer. Please sign in again."
+    IDS_WARNING_MULTIINTANCE 
+                            "A Viewbar instance has existed, You can only run one instance on a single computer!"
+    IDS_WARNING             "Warning"
+    IDS_PPG_GENERAL         "General"
+    IDS_PPG_GENERAL_AUTOSTART 
+                            "Automatically run Viewbar when I log on to Windows"
+    IDS_PPG_GENERAL_SEARCH_ENGINE_SETTING "Search Engine Settings"
+    IDS_PPG_GENERAL_DEFAULT_SEARCH_ENGINE "Default Search Engine"
+    IDS_PPG_GENERAL_UPDATE_SETTING "Auto Update Settings"
+    IDS_PPG_GENERAL_UPDATE_AUTO "Download and install automatically"
+    IDS_PPG_GENERAL_UPDATE_SEMIAUTO "Auto download, but manual install"
+    IDS_PPG_GENERAL_UPDATE_MANNUALLY "All manual"
+    IDS_PPG_DISPLAY         "Display"
+    IDS_PPG_DISPLAY_LANG    "Language"
+    IDS_PPG_DISPLAY_SKIN    "Skin"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PPG_DISPLAY_DOCK    "Dock"
+    IDS_PPG_DISPLAY_FAV_SETTING "Favorites Setting"
+    IDS_PPG_NETWORK         "Network"
+    IDS_PPG_NETWORK_PROXYIP "Proxy IP"
+    IDS_PPG_NETWORK_PROXYPORT "Proxy Port"
+    IDS_PPG_NETWORK_USERNAME "Username"
+    IDS_PPG_NETWORK_PASSWD  "Password"
+    IDS_PPG_NETWORK_ENABLEPROXY "Enable Proxy"
+    IDS_PPG_GENERAL_CHK_UPDATES "Your Viewbar is currently up-to-date."
+    IDS_PPG_GENERAL_CHK_BUTTON "Check For Updates"
+    IDS_WARNING_NEW_VERSION "A new version is available, update or not?"
+    IDS_WARNING_UPDATE_CONFIRM 
+                            "Downloading successfully, before installing, Viewbar should be closed first, are you sure?"
+    IDS_ERR_FAILED_TO_LOGIN "Failed to login"
+    IDS_ERR_EMPTY_USERNAME  "Please enter your account."
+    IDS_ERR_EMPTY_PASSWD    "Please enter your password."
+    IDS_TOOLTIPS_SEARCH     "Search"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLTIPS_TOOLS      "Tools"
+    IDS_TOOLTIPS_TRAYICON   "Minimize to tray."
+    IDS_ERR_LOGIN_TITLE     "Infomation"
+    IDS_WARNING_QUIT_MSG    "Are you sure you want to quit?"
+    IDS_WARNING_QUIT_TITLE  "Query"
+    IDS_PPG_DISPLAY_PROMPT  "Warning when quit Viewbar."
+    IDS_WARNING_FORCEUPDATE_TITLE "Infomation"
+    IDS_WARNING_FORCEUPDATE_MSG 
+                            "Your Viewbar has expired and it'll quit now, stay tuned."
+    IDS_LOGIN_ACCOUNT       "Account:"
+    IDS_LOGIN_PASSWD        "Password:"
+    IDS_LOGIN_REMEMBERME    "Remember me"
+    IDS_LOGIN_REMEMBERALL   "Remember me and password"
+    IDS_LOGIN_SIGNIN        "Sign in"
+    IDS_LOGIN_NOTAMEMBER    "Not a member?"
+    IDS_LOGIN_SIGNUP        "Sign up"
+    IDS_LOGIN_TOOLS         "Tools"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_DOWNLOAD_FAILURE 
+                            "Failed to download file ""%s"",  Please check your network and try again."
+    IDS_TEMPLATE_LANG       "en_US"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ViewBar.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_AMAZON         ICON                    "res\\amazon.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ViewBar.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

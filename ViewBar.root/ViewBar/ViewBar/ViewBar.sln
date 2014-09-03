@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ViewBar", "ViewBar\ViewBar.vcproj", "{24D4A663-604E-4158-B6DE-C26F4B876DCD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{11751D38-55CF-4B2F-B6D2-1D93D30FF60C} = {11751D38-55CF-4B2F-B6D2-1D93D30FF60C}
+		{EACA4083-AB07-4E12-BD65-60836A8DDF79} = {EACA4083-AB07-4E12-BD65-60836A8DDF79}
+		{38C0E591-9250-4A02-8EA1-6E2B734CC2BA} = {38C0E591-9250-4A02-8EA1-6E2B734CC2BA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VBMonitor", "VBMonitor\VBMonitor.vcproj", "{EACA4083-AB07-4E12-BD65-60836A8DDF79}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VBSniffer", "VBSniffer\VBSniffer.vcproj", "{11751D38-55CF-4B2F-B6D2-1D93D30FF60C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VBUpdater", "VBUpdater\VBUpdater.vcproj", "{38C0E591-9250-4A02-8EA1-6E2B734CC2BA}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = VBMonitor\\VBMonitor.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = VBMonitor\\
+		SccProjectUniqueName2 = VBSniffer\\VBSniffer.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = VBSniffer\\
+		SccProjectUniqueName3 = VBUpdater\\VBUpdater.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = VBUpdater\\
+		SccProjectUniqueName4 = ViewBar\\ViewBar.vcproj
+		SccLocalPath4 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = ViewBar\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D4A663-604E-4158-B6DE-C26F4B876DCD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24D4A663-604E-4158-B6DE-C26F4B876DCD}.Debug|Win32.Build.0 = Debug|Win32
+		{24D4A663-604E-4158-B6DE-C26F4B876DCD}.Release|Win32.ActiveCfg = Release|Win32
+		{24D4A663-604E-4158-B6DE-C26F4B876DCD}.Release|Win32.Build.0 = Release|Win32
+		{EACA4083-AB07-4E12-BD65-60836A8DDF79}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EACA4083-AB07-4E12-BD65-60836A8DDF79}.Debug|Win32.Build.0 = Debug|Win32
+		{EACA4083-AB07-4E12-BD65-60836A8DDF79}.Release|Win32.ActiveCfg = Release|Win32
+		{EACA4083-AB07-4E12-BD65-60836A8DDF79}.Release|Win32.Build.0 = Release|Win32
+		{11751D38-55CF-4B2F-B6D2-1D93D30FF60C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11751D38-55CF-4B2F-B6D2-1D93D30FF60C}.Debug|Win32.Build.0 = Debug|Win32
+		{11751D38-55CF-4B2F-B6D2-1D93D30FF60C}.Release|Win32.ActiveCfg = Release|Win32
+		{11751D38-55CF-4B2F-B6D2-1D93D30FF60C}.Release|Win32.Build.0 = Release|Win32
+		{38C0E591-9250-4A02-8EA1-6E2B734CC2BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38C0E591-9250-4A02-8EA1-6E2B734CC2BA}.Debug|Win32.Build.0 = Debug|Win32
+		{38C0E591-9250-4A02-8EA1-6E2B734CC2BA}.Release|Win32.ActiveCfg = Release|Win32
+		{38C0E591-9250-4A02-8EA1-6E2B734CC2BA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

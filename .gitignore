@@ -1,0 +1,17 @@
+hs_err_pid*
+.settings/
+bin/
+data/
+doc/
+lib-src/
+temp/
+upload/
+www/WEB-INF/classes
+ROOT/WEB-INF/classes
+vssver2.scc
+*.exe
+*.dll
+Debug/
+Release/
+*.ncb
+*.scc

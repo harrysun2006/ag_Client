@@ -1,0 +1,5 @@
+<SearchEngines>
+  <Engine id="1" name="Baidu">http://www.baidu.com/s?wd=%s</Engine>
+  <Engine id="2" name="Google">http://www.google.com/search?q=%s</Engine>
+  <Engine id="3" name="Live.com">http://search.live.com/results.aspx?q=%s</Engine>
+</SearchEngines>

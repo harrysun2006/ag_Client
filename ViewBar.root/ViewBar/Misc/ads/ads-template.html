@@ -1,0 +1,80 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<style>
+body{font-family:Verdana;border-style:none;margin-bottom:2px;margin-top:2px;}
+
+.wrap{word-break:break-all;overflow:hidden}
+
+div.outDiv{
+overflow:hidden;
+width:{[[_PAGE_WIDTH_]]};
+margin-bottom:2px;
+margin-top:0px;
+height:25px;
+}
+
+div.advertise{
+width:{[[_PAGE_WIDTH_]]};
+font-size:12px;
+line-height:12px;
+background-color:#FFFFFF;
+height:25px;
+margin-bottom:0px;
+margin-top:0px;
+}
+
+.r11{color:blue;font:12px Verdana;text-decoration:none; line-height:12px}
+.r11:link{color:blue;font:12px Verdana;text-decoration:underline; line-height:12px}
+.r11:visited{color:blue;font:12px Verdana;text-decoration:underline; line-height:12px}
+.r11:hover{color:blue;font:12px Verdana;text-decoration:underline; line-height:12px}
+
+</style>
+</head>
+
+<body scroll="no" topmargin="0" leftmargin="0" background="{[_BACKGROUND_]}">
+
+<div id="d2" class="outDiv">
+  <table bgcolor="#FFFFFF" cellpadding="0" cellspacing="0">
+   <tr>
+    <td id="d21">
+     <nobr>
+     <div id="advertise" class="advertise">
+
+      </div>
+     </nobr>
+    </td>
+   </tr>
+  </table>
+ </div> 
+</body>
+
+<script type="text/javascript">
+  
+	 var ads = new Array({[[_VIEWBAR_ADS_]]});
+
+
+	 var index = 0;
+	 function displayAds(){
+		
+		if( ads != null){
+			index = index%ads.length;
+		}
+		//alert(index);		
+		document.getElementById('advertise').innerHTML = ads[index];
+		index++;
+		if( index == ads.length){
+			index = 0;
+		}
+	 }
+
+	 displayAds();
+	 if (ads.length > 1)
+		setInterval("displayAds();",2000);
+
+
+ </script>
+
+
+</html>
